@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Heads or Tails?</h1>
+    <button onclick="flip()">Flip Coin</button>
+    <p id="result"></p>
+    <script>
+        async function flip() {
+            const res = await fetch('/api/flip');
+            const data = await res.json();
+            document.getElementById('result').innerText = `It's ${data.result}! Total ${data.result}s: ${data.total}`;
+        }
+    </script>
+</body>
+</html>
