@@ -1,16 +1,18 @@
-# values.yaml
-# replicaCount: 1
-#
-# frontend:
-#   repository: vdevopsvinod/coin-frontend
-#     tag: 6
-#       servicePort: 80
-#
-#       backend:
-#         repository: vdevopsvinod/coin-backend
-#           tag: 6
-#             servicePort: 3000
-#
-#             redis:
-#               image: redis:alpine
-#                 port: 6379
+replicaCount: 1
+
+frontend:
+  repository: vdevopsvinod/coin-frontend
+  tag: "6"
+  servicePort: 80
+
+backend:
+  repository: vdevopsvinod/coin-backend
+  tag: "6"
+  servicePort: 3000
+
+redis:
+  image: redis:alpine
+  port: 6379
+
+service:
+  port: 80
