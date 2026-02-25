@@ -2,7 +2,7 @@ replicaCount: 1
 
 frontend:
   repository: vdevopsvinod/coin-frontend
-  tag: "7"
+  tag: "v1"
   servicePort: 80
 
 backend:
