@@ -1,0 +1,16 @@
+# values.yaml
+# replicaCount: 1
+#
+# frontend:
+#   repository: vdevopsvinod/coin-frontend
+#     tag: latest # Jenkins will change this to the build number
+#       servicePort: 80
+#
+#       backend:
+#         repository: vdevopsvinod/coin-backend
+#           tag: latest # Jenkins will change this to the build number
+#             servicePort: 3000
+#
+#             redis:
+#               image: redis:alpine
+#                 port: 6379
