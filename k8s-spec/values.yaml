@@ -3,12 +3,12 @@
 #
 # frontend:
 #   repository: vdevopsvinod/coin-frontend
-#     tag: latest # Jenkins will change this to the build number
+#     tag: 6
 #       servicePort: 80
 #
 #       backend:
 #         repository: vdevopsvinod/coin-backend
-#           tag: latest # Jenkins will change this to the build number
+#           tag: 6
 #             servicePort: 3000
 #
 #             redis:
