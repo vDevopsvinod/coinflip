@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coinflip-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: vdevopsvinod/coinflip:v2 # <--- Change v1 to v2 here
+        ports:
+        - containerPort: 3000
+          name: http # <--- IMPORTANT: This name is used by ServiceMonitor
