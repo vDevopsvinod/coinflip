@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: coinflip-backend-monitor
+  namespace: monitoring
+  labels:
+    release: monitoring  # This must match your Helm release name
+spec:
+  selector:
+    matchLabels:
+      app: backend      # This must match your Backend Service label
+  namespaceSelector:
+    matchNames:
+    - default           # Assuming your app is in the 'default' namespace
+  endpoints:
+  - port: http          # The name of the port in your Service YAML
+    path: /metrics
+    interval: 15s
