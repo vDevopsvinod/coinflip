@@ -15,13 +15,13 @@ This project demonstrates a modern **Microservices Architecture**. It focuses on
 * **CI/CD:** Jenkins
 * **Containerization:** Docker
 
+
+
 ## 🏗️ Architecture & Implementation
 * **Dockerized Services:** Dedicated Dockerfiles for consistent environments.
 * **Kubernetes Deployments:** Manages pod replicas and self-healing.
 * **Service Discovery:** * **ClusterIP:** Secure internal communication.
     * **NodePort:** External access on port 30007.
-
-
 
 ## 🔄 CI/CD Pipeline
 The project implements a **Jenkins Declarative Pipeline** to automate the deployment lifecycle:
