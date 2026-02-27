@@ -26,3 +26,4 @@ This project demonstrates a modern **Microservices Architecture**. It focuses on
 ## 💡 Key Challenges Solved
 * **Service Connectivity:** Used K8s Services for dynamic internal DNS discovery.
 * **Dependency Resolution:** Optimized Docker builds to ensure all Node.js modules are correctly installed.
+
