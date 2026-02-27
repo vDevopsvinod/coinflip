@@ -1,3 +1,5 @@
+![Application Preview](images/coin_flip.png)
+![Application Preview](images/coin_flip.png)
 # 🪙 Coin Flip Application
 
 A full-stack, containerized web application deployed on **Kubernetes**. This project simulates a coin flip game where results are calculated by a backend API and stored in a persistent Redis database.
@@ -25,3 +27,4 @@ This project demonstrates a modern **Microservices Architecture**. It focuses on
 ## 💡 Key Challenges Solved
 * **Service Connectivity:** Used K8s Services for dynamic internal DNS discovery.
 * **Dependency Resolution:** Optimized Docker builds to ensure all Node.js modules are correctly installed.
+
