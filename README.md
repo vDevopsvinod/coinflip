@@ -1,4 +1,5 @@
 ![Application Preview](images/coin_flip.png)
+![Application Preview](images/coin_flip.png)
 # 🪙 Coin Flip Application
 
 A full-stack, containerized web application deployed on **Kubernetes**. This project simulates a coin flip game where results are calculated by a backend API and stored in a persistent Redis database.
