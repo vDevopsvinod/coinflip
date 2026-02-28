@@ -1,0 +1,26 @@
+services:
+  redis:
+    image: redis:alpine
+    restart: always
+    ports:
+      - "6379:6379"
+
+  backend:
+    build: ./backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - "30007:80"
+    environment:
+      - BACKEND_URL=http://backend:5000
+    depends_on:
+      - backend
